@@ -1,0 +1,11 @@
+[user]
+	name = Nick
+	email = tankard@yandex.ru
+[credential]
+	helper = osxkeychain
+[push]
+	default = simple
+[filter "media"]
+	required = true
+	clean = git media clean %f
+	smudge = git media smudge %f
