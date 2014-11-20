@@ -63,6 +63,8 @@ let g:ctrlp_working_path_mode = 0
 let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
 set grepprg=ag\ --nogroup\ --nocolor
 let g:ctrlp_use_caching = 0
+let g:ctrlp_by_filename = 1
+let g:ctrlp_regexp = 1
 
 " bind K to grep word under cursor
 nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
