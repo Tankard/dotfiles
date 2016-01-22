@@ -10,7 +10,6 @@ Bundle 'VundleVim/Vundle.vim'
 
 Bundle 'christoomey/vim-tmux-navigator'
 Bundle 'tpope/vim-rails'
-Bundle 'tmux-plugins/vim-tmux'
 Bundle 'vim-airline/vim-airline'
 Bundle 'kien/ctrlp.vim'
 Bundle 'tpope/vim-vinegar'
@@ -19,7 +18,9 @@ Bundle 'tpope/vim-endwise'
 Bundle "tpope/vim-surround"
 Bundle "tpope/vim-commentary"
 Bundle "bronson/vim-trailing-whitespace"
+Bundle "keith/tmux.vim"
 Bundle "jpo/vim-railscasts-theme"
+Bundle 'flazz/vim-colorschemes'
 
 " All of your Bundles must be added before the following line
 call vundle#end()            " required
