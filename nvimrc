@@ -6,12 +6,22 @@ set rtp+=~/.config/nvim/bundle/Vundle.vim
 call vundle#begin("~/.config/nvim/bundle")
 
 " let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
+Bundle 'VundleVim/Vundle.vim'
 
-Plugin 'christoomey/vim-tmux-navigator'
-Plugin 'tpope/vim-rails'
+Bundle 'christoomey/vim-tmux-navigator'
+Bundle 'tpope/vim-rails'
+Bundle 'tmux-plugins/vim-tmux'
+Bundle 'vim-airline/vim-airline'
+Bundle 'kien/ctrlp.vim'
+Bundle 'tpope/vim-vinegar'
+Bundle 'jiangmiao/auto-pairs'
+Bundle 'tpope/vim-endwise'
+Bundle "tpope/vim-surround"
+Bundle "tpope/vim-commentary"
+Bundle "bronson/vim-trailing-whitespace"
+Bundle "jpo/vim-railscasts-theme"
 
-" All of your Plugins must be added before the following line
+" All of your Bundles must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
 
