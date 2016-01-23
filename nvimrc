@@ -1,0 +1,52 @@
+filetype off
+syntax on
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.config/nvim/bundle/Vundle.vim
+call vundle#begin("~/.config/nvim/bundle")
+
+" let Vundle manage Vundle, required
+Bundle 'VundleVim/Vundle.vim'
+
+Bundle 'christoomey/vim-tmux-navigator'
+Bundle 'tpope/vim-rails'
+Bundle 'vim-airline/vim-airline'
+Bundle 'kien/ctrlp.vim'
+Bundle 'tpope/vim-vinegar'
+Bundle 'jiangmiao/auto-pairs'
+Bundle 'tpope/vim-endwise'
+Bundle "tpope/vim-surround"
+Bundle "tpope/vim-commentary"
+Bundle "bronson/vim-trailing-whitespace"
+Bundle "keith/tmux.vim"
+Bundle "jpo/vim-railscasts-theme"
+Bundle 'flazz/vim-colorschemes'
+
+" All of your Bundles must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+
+set expandtab
+set tabstop=2
+set shiftwidth=2
+
+set number
+set showmatch
+set incsearch
+set hlsearch
+
+" Cursor in insert mode
+let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
+
+let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+
+" Splits
+set splitbelow
+set splitright
+
+" automatically rebalance windows on vim resize
+autocmd VimResized * :wincmd =
+
+" zoom a vim pane, <C-w>= to re-balance
+nnoremap <leader>- :wincmd _<cr>:wincmd \|<cr>
+nnoremap <leader>= :wincmd =<cr>
