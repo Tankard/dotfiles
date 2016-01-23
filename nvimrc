@@ -20,7 +20,8 @@ Bundle "tpope/vim-commentary"
 Bundle "bronson/vim-trailing-whitespace"
 Bundle "keith/tmux.vim"
 Bundle "jpo/vim-railscasts-theme"
-Bundle 'flazz/vim-colorschemes'
+"Bundle 'flazz/vim-colorschemes'
+Bundle 'nanotech/jellybeans.vim'
 
 " All of your Bundles must be added before the following line
 call vundle#end()            " required
@@ -34,6 +35,8 @@ set number
 set showmatch
 set incsearch
 set hlsearch
+
+colorscheme jellybeans
 
 " Cursor in insert mode
 let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
