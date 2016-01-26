@@ -22,6 +22,7 @@ Bundle "keith/tmux.vim"
 Bundle "jpo/vim-railscasts-theme"
 "Bundle 'flazz/vim-colorschemes'
 Bundle 'nanotech/jellybeans.vim'
+Bundle 'scrooloose/nerdtree'
 
 " All of your Bundles must be added before the following line
 call vundle#end()            " required
@@ -53,3 +54,5 @@ autocmd VimResized * :wincmd =
 " zoom a vim pane, <C-w>= to re-balance
 nnoremap <leader>- :wincmd _<cr>:wincmd \|<cr>
 nnoremap <leader>= :wincmd =<cr>
+
+map <C-n> :NERDTreeToggle<CR>
