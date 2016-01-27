@@ -36,6 +36,7 @@ set number
 set showmatch
 set incsearch
 set hlsearch
+set nohlsearch
 
 colorscheme jellybeans
 
