@@ -39,11 +39,6 @@ set hlsearch
 set nohlsearch
 
 colorscheme jellybeans
-let g:jellybeans_overrides = {
-\    'Visual': { 'guifg': 'White', 'guibg': 'White',
-\              'ctermfg': 'White', 'ctermbg': 'White',
-\              'attr': 'bold' },
-\}
 
 " Cursor in insert mode
 let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
