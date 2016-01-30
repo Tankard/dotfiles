@@ -80,3 +80,5 @@ export PATH="/usr/local/heroku/bin:/Users/tankard/.rvm/gems/ruby-2.1.0/bin:/User
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias glg="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 alias tat='~/.dotfiles/./tat'
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
