@@ -51,7 +51,7 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH="/usr/local/heroku/bin:/Users/tankard/.rvm/gems/ruby-2.1.0/bin:/Users/tankard/.rvm/gems/ruby-2.1.0@global/bin:/Users/tankard/.rvm/rubies/ruby-2.1.0/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/tankard/.rvm/bin"
+export PATH="$PATH:/usr/local/heroku/bin:/Users/tankard/.rvm/gems/ruby-2.1.0/bin:/Users/tankard/.rvm/gems/ruby-2.1.0@global/bin:/Users/tankard/.rvm/rubies/ruby-2.1.0/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/tankard/.rvm/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
