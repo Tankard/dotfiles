@@ -81,4 +81,24 @@ export PATH="/usr/local/heroku/bin:/Users/tankard/.rvm/gems/ruby-2.1.0/bin:/User
 alias glg="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 alias tat='~/.dotfiles/./tat'
 
+_not_inside_tmux() { [[ -z "$TMUX" ]] }
+
+ensure_tmux_is_running() {
+  if _not_inside_tmux; then
+    tat
+  fi
+}
+
+ensure_tmux_is_running
+
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+function prompt_rvm {
+    rbv=`rvm-prompt`
+    rbv=${rbv#ruby-}
+    [[ $rbv == *"@"* ]] || rbv="${rbv}@default"
+    echo $rbv
+}
+
+# Rubies are red, and my rprompt is too
+RPROMPT='%{$fg[red]%}$(prompt_rvm)%{$reset_color%}%'
