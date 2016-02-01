@@ -92,3 +92,13 @@ ensure_tmux_is_running() {
 ensure_tmux_is_running
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+function prompt_rvm {
+    rbv=`rvm-prompt`
+    rbv=${rbv#ruby-}
+    [[ $rbv == *"@"* ]] || rbv="${rbv}@default"
+    echo $rbv
+}
+
+# Rubies are red, and my rprompt is too
+RPROMPT='%{$fg[red]%}$(prompt_rvm)%{$reset_color%}%'
