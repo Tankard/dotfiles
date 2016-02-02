@@ -36,7 +36,6 @@ nnoremap <Leader>w :w<CR>
 set expandtab
 set tabstop=2
 set shiftwidth=2
-
 set number
 set showmatch
 set incsearch
@@ -73,3 +72,18 @@ let g:ctrlp_use_caching = 0
 let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
 
 nnoremap \ :Ag<SPACE>
+
+" Tab completion
+" will insert tab at beginning of line,
+" will use completion if not at beginning
+set wildmode=list:longest,list:full
+function! InsertTabWrapper()
+    let col = col('.') - 1
+    if !col || getline('.')[col - 1] !~ '\k'
+        return "\<tab>"
+    else
+        return "\<c-p>"
+    endif
+endfunction
+inoremap <Tab> <c-r>=InsertTabWrapper()<cr>
+inoremap <S-Tab> <c-n>
