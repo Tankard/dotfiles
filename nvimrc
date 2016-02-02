@@ -23,10 +23,15 @@ Bundle "jpo/vim-railscasts-theme"
 "Bundle 'flazz/vim-colorschemes'
 Bundle 'nanotech/jellybeans.vim'
 Bundle 'scrooloose/nerdtree'
+Bundle 'rking/ag.vim'
 
 " All of your Bundles must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
+
+let mapleader = "\<Space>"
+
+nnoremap <Leader>w :w<CR>
 
 set expandtab
 set tabstop=2
@@ -57,3 +62,8 @@ nnoremap <leader>- :wincmd _<cr>:wincmd \|<cr>
 nnoremap <leader>= :wincmd =<cr>
 
 map <C-n> :NERDTreeToggle<CR>
+
+let g:ag_working_path_mode="r"
+
+" Make it more obvious which paren I'm on
+hi MatchParen cterm=none ctermbg=black ctermfg=yellow
