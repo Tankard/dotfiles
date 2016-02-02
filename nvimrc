@@ -67,3 +67,7 @@ let g:ag_working_path_mode="r"
 
 " Make it more obvious which paren I'm on
 hi MatchParen cterm=none ctermbg=black ctermfg=yellow
+
+let g:ctrlp_working_path_mode = 0
+
+let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
