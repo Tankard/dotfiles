@@ -25,6 +25,8 @@ Bundle 'nanotech/jellybeans.vim'
 Bundle 'scrooloose/nerdtree'
 Bundle 'rking/ag.vim'
 Bundle 'tpope/vim-unimpaired'
+Bundle 'nelstrom/vim-textobj-rubyblock'
+Bundle 'kana/vim-textobj-user'
 
 " All of your Bundles must be added before the following line
 call vundle#end()            " required
