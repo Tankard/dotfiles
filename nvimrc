@@ -24,6 +24,7 @@ Bundle "jpo/vim-railscasts-theme"
 Bundle 'nanotech/jellybeans.vim'
 Bundle 'scrooloose/nerdtree'
 Bundle 'rking/ag.vim'
+Bundle 'tpope/vim-unimpaired'
 
 " All of your Bundles must be added before the following line
 call vundle#end()            " required
