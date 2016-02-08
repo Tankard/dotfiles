@@ -45,6 +45,7 @@ set showmatch
 set incsearch
 set hlsearch
 set nohlsearch
+set autoread
 
 colorscheme jellybeans
 
