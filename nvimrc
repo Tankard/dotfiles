@@ -1,5 +1,4 @@
 filetype off
-syntax on
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.config/nvim/bundle/Vundle.vim
@@ -31,6 +30,7 @@ Bundle 'elixir-lang/vim-elixir'
 " All of your Bundles must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
+syntax on
 
 let mapleader = "\<Space>"
 
