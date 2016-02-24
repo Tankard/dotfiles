@@ -26,6 +26,7 @@ Bundle 'tpope/vim-unimpaired'
 Bundle 'nelstrom/vim-textobj-rubyblock'
 Bundle 'kana/vim-textobj-user'
 Bundle 'elixir-lang/vim-elixir'
+Bundle 'tpope/vim-repeat'
 
 " All of your Bundles must be added before the following line
 call vundle#end()            " required
