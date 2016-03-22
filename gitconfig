@@ -19,3 +19,4 @@
 	required = true
 [core]
 	excludesfile = ~/.dotfiles/gitignore
+	editor = nvim

@@ -27,6 +27,8 @@ Bundle 'nelstrom/vim-textobj-rubyblock'
 Bundle 'kana/vim-textobj-user'
 Bundle 'elixir-lang/vim-elixir'
 Bundle 'tpope/vim-repeat'
+Bundle 'thoughtbot/vim-rspec'
+Bundle 'tpope/vim-dispatch'
 
 " All of your Bundles must be added before the following line
 call vundle#end()            " required
@@ -122,3 +124,11 @@ autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
 autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
+
+" RSpec.vim mappings
+map <Leader>t :call RunCurrentSpecFile()<CR>
+map <Leader>s :call RunNearestSpec()<CR>
+map <Leader>l :call RunLastSpec()<CR>
+map <Leader>a :call RunAllSpecs()<CR>
+
+let g:rspec_command = "Dispatch bin/rspec {spec}"
