@@ -29,6 +29,7 @@ Bundle 'elixir-lang/vim-elixir'
 Bundle 'tpope/vim-repeat'
 Bundle 'thoughtbot/vim-rspec'
 Bundle 'tpope/vim-dispatch'
+Bundle 'christoomey/vim-system-copy'
 
 " All of your Bundles must be added before the following line
 call vundle#end()            " required
