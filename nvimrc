@@ -30,6 +30,7 @@ Bundle 'tpope/vim-repeat'
 Bundle 'thoughtbot/vim-rspec'
 Bundle 'tpope/vim-dispatch'
 Bundle 'christoomey/vim-system-copy'
+Bundle "kana/vim-textobj-entire"
 
 " All of your Bundles must be added before the following line
 call vundle#end()            " required
