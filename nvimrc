@@ -31,6 +31,8 @@ Bundle 'thoughtbot/vim-rspec'
 Bundle 'tpope/vim-dispatch'
 Bundle 'christoomey/vim-system-copy'
 Bundle "kana/vim-textobj-entire"
+Bundle 'christoomey/vim-sort-motion'
+Bundle 'kana/vim-textobj-indent'
 
 " All of your Bundles must be added before the following line
 call vundle#end()            " required
