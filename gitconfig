@@ -20,3 +20,5 @@
 [core]
 	excludesfile = ~/.dotfiles/gitignore
 	editor = nvim
+[diff]
+  compactionHeuristic = true
