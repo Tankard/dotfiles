@@ -24,3 +24,5 @@
   compactionHeuristic = true
 [fetch]
 	prune = true
+[merge]
+	ff = only
