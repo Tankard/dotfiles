@@ -33,6 +33,8 @@ Bundle 'christoomey/vim-system-copy'
 Bundle "kana/vim-textobj-entire"
 Bundle 'christoomey/vim-sort-motion'
 Bundle 'kana/vim-textobj-indent'
+Bundle 'tpope/vim-fugitive'
+Bundle 'christoomey/vim-conflicted'
 
 " All of your Bundles must be added before the following line
 call vundle#end()            " required
@@ -140,3 +142,5 @@ let g:rspec_command = "Dispatch bin/rspec {spec}"
 " Expand current path
 cnoremap <expr> %%  getcmdtype() == ':' ? expand('%:h').'/' : '%%'
 
+" Vim conflicted airline
+set stl+=%{ConflictedVersion()}
