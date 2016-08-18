@@ -101,3 +101,15 @@ function prompt_rvm {
 
 # Rubies are red, and my rprompt is too
 RPROMPT='%{$fg[red]%}$(prompt_rvm)%{$reset_color%}%'
+
+# fundcion for git
+unalias g
+
+compdef g=git
+function g {
+  if [[ $# -gt 0 ]]; then
+    git "$@"
+  else
+    git status --short --branch
+  fi
+}
