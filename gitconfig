@@ -26,3 +26,24 @@
 	prune = true
 [merge]
 	ff = only
+[alias]
+  aa = add --all
+  unstage = reset
+  dc = diff --word-diff --cached --color-words
+  df = diff --word-diff --color-words
+  co = checkout
+  b = branch
+  conflicted = !vim +Conflicted
+  master = checkout master
+  pl = pull
+  ps = push
+  ri = rebase -i
+  rbc = rebase --continue
+  stat = show --stat
+  si = status --ignored
+  sl = log --oneline --decorate --graph -20
+  slap = log --oneline --decorate --all --graph
+  slp = log --oneline --decorate --graph
+  unchange = checkout --
+  uncommit = reset --soft HEAD^
+  cm = commit -m
