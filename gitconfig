@@ -44,6 +44,6 @@
   sl = log --oneline --decorate --graph -20
   slap = log --oneline --decorate --all --graph
   slp = log --oneline --decorate --graph
-  unchange = checkout --
   uncommit = reset --soft HEAD^
+  reset = reset HEAD --hard
   cm = commit -m
