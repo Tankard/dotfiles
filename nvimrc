@@ -43,8 +43,6 @@ syntax on
 
 let mapleader = "\<Space>"
 
-nnoremap <Leader>w :w<CR>
-
 set expandtab
 set tabstop=2
 set shiftwidth=2
@@ -112,16 +110,11 @@ set tags=./tags;
 
 nmap 0 ^
 
-imap jk <esc>
-imap kj <esc>
-
 " Move up and down by visible lines if current line is wrapped
 nmap j gj
 nmap k gk
 
-vmap <Leader>b :<C-U>!git blame <C-R>=expand("%:p") <CR> \| sed -n <C-R>=line("'<") <CR>,<C-R>=line("'>") <CR>p <CR>
 nmap <leader>p orequire 'pry'; binding.pry<esc>^
-
 
 " highlight trailing spaces in annoying red
 highlight ExtraWhitespace ctermbg=1 guibg=red
