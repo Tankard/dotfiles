@@ -53,13 +53,12 @@ set incsearch
 set hlsearch
 set nohlsearch
 set autoread
+set termguicolors
 
 colorscheme jellybeans
 
 " Cursor in insert mode
 let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
-
-let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 
 " Splits
 set splitbelow
