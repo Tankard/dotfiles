@@ -45,3 +45,4 @@ config.codekit
 
 tags
 .agignore
+.rspec
