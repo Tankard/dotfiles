@@ -129,7 +129,7 @@ map <Leader>s :call RunNearestSpec()<CR>
 map <Leader>l :call RunLastSpec()<CR>
 map <Leader>a :call RunAllSpecs()<CR>
 
-let g:rspec_command = "Dispatch bin/rspec {spec}"
+let g:rspec_command = "Dispatch rspec {spec}"
 
 " Expand current path
 cnoremap <expr> %%  getcmdtype() == ':' ? expand('%:h').'/' : '%%'
