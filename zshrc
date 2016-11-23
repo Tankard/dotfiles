@@ -113,3 +113,5 @@ function g {
     git status --short --branch
   fi
 }
+
+alias vim="nvim"
