@@ -35,6 +35,7 @@ Bundle 'christoomey/vim-sort-motion'
 Bundle 'kana/vim-textobj-indent'
 Bundle 'tpope/vim-fugitive'
 Bundle 'christoomey/vim-conflicted'
+Bundle 'joukevandermaas/vim-ember-hbs'
 
 " All of your Bundles must be added before the following line
 call vundle#end()            " required
