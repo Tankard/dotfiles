@@ -36,6 +36,7 @@ Bundle 'kana/vim-textobj-indent'
 Bundle 'tpope/vim-fugitive'
 Bundle 'christoomey/vim-conflicted'
 Bundle 'joukevandermaas/vim-ember-hbs'
+Bundle 'neomake/neomake'
 
 " All of your Bundles must be added before the following line
 call vundle#end()            " required
@@ -137,3 +138,6 @@ cnoremap <expr> %%  getcmdtype() == ':' ? expand('%:h').'/' : '%%'
 
 " Vim conflicted airline
 set stl+=%{ConflictedVersion()}
+
+" Run NeoMake on read and write operations
+autocmd! BufReadPost,BufWritePost * Neomake
