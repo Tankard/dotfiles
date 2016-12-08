@@ -9,7 +9,7 @@ Bundle 'VundleVim/Vundle.vim'
 
 Bundle 'christoomey/vim-tmux-navigator'
 Bundle 'tpope/vim-rails'
-Bundle 'vim-airline/vim-airline'
+Bundle 'itchyny/lightline.vim'
 Bundle 'kien/ctrlp.vim'
 Bundle 'tpope/vim-vinegar'
 Bundle 'jiangmiao/auto-pairs'
@@ -56,8 +56,12 @@ set hlsearch
 set nohlsearch
 set autoread
 set termguicolors
+set noshowmode
 
 colorscheme jellybeans
+let g:lightline = {
+      \ 'colorscheme': 'wombat',
+      \ }
 
 " Cursor in insert mode
 let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
