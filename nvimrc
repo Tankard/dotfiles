@@ -28,7 +28,7 @@ Bundle 'kana/vim-textobj-user'
 Bundle 'elixir-lang/vim-elixir'
 Bundle 'tpope/vim-repeat'
 Bundle 'thoughtbot/vim-rspec'
-Bundle 'tpope/vim-dispatch'
+Bundle 'christoomey/vim-tmux-runner'
 Bundle 'christoomey/vim-system-copy'
 Bundle "kana/vim-textobj-entire"
 Bundle 'christoomey/vim-sort-motion'
@@ -135,7 +135,12 @@ map <Leader>s :call RunNearestSpec()<CR>
 map <Leader>l :call RunLastSpec()<CR>
 map <Leader>a :call RunAllSpecs()<CR>
 
-let g:rspec_command = "Dispatch rspec {spec}"
+let g:rspec_command = "call VtrSendCommand('rspec {spec}', 1)"
+nnoremap <leader>fr :VtrFocusRunner<cr>
+nnoremap <leader>kr :VtrKillRunner<cr>
+nnoremap <leader>rr :VtrSendLinesToRunner<cr>
+nnoremap <leader>dr :VtrSendCtrlD<cr>
+nnoremap <leader>ar :VtrAttachToPane<cr>
 
 " Expand current path
 cnoremap <expr> %%  getcmdtype() == ':' ? expand('%:h').'/' : '%%'
