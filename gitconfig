@@ -47,3 +47,4 @@
   uncommit = reset --soft HEAD^
   reset = reset HEAD --hard
   cm = commit -m
+  stash-all = stash save --include-untracked
