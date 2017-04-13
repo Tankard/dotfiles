@@ -19,13 +19,15 @@
 	required = true
 [core]
 	excludesfile = ~/.dotfiles/gitignore
-	editor = nvim
+	editor = vim
 [diff]
   compactionHeuristic = true
 [fetch]
 	prune = true
 [merge]
 	ff = only
+[status]
+  showUntrackedFiles = all
 [alias]
   aa = add --all
   unstage = reset
