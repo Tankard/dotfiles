@@ -1,6 +1,7 @@
 [user]
 	name = tankard
-	email = tankard@yandex.ru
+	email = kupriyanovnick@gmail.com
+	signingkey = 681D53AAC7981258
 [credential]
 	helper = osxkeychain
 [push]
@@ -50,3 +51,5 @@
   reset = reset HEAD --hard
   cm = commit -m
   stash-all = stash save --include-untracked
+[commit]
+	gpgsign = true
