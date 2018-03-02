@@ -152,3 +152,5 @@ set stl+=%{ConflictedVersion()}
 
 " Run NeoMake on read and write operations
 autocmd! BufReadPost,BufWritePost * Neomake
+
+let g:elm_format_autosave = 1
