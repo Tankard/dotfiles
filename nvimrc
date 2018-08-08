@@ -39,6 +39,7 @@ Bundle 'joukevandermaas/vim-ember-hbs'
 Bundle 'neomake/neomake'
 Bundle 'slim-template/vim-slim.git'
 Bundle 'elmcast/elm-vim'
+Bundle 'rhysd/vim-crystal'
 
 " All of your Bundles must be added before the following line
 call vundle#end()            " required
