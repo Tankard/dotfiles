@@ -45,7 +45,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-syntax-highlighting)
+plugins=(git zsh-syntax-highlighting nvm)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -118,4 +118,7 @@ alias vim="nvim"
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
-export PATH="$(brew --prefix qt@5.5)/bin:$PATH"
+
+
+export PATH="$HOME/Qt5.5.0/5.5/clang_64/bin:$PATH"
+
