@@ -10,6 +10,7 @@ Bundle 'VundleVim/Vundle.vim'
 Bundle 'christoomey/vim-tmux-navigator'
 Bundle 'tpope/vim-rails'
 Bundle 'itchyny/lightline.vim'
+Bundle 'maximbaz/lightline-ale'
 Bundle 'kien/ctrlp.vim'
 Bundle 'tpope/vim-vinegar'
 Bundle 'jiangmiao/auto-pairs'
@@ -36,11 +37,11 @@ Bundle 'kana/vim-textobj-indent'
 Bundle 'tpope/vim-fugitive'
 Bundle 'christoomey/vim-conflicted'
 Bundle 'joukevandermaas/vim-ember-hbs'
-Bundle 'neomake/neomake'
 Bundle 'slim-template/vim-slim.git'
 Bundle 'elmcast/elm-vim'
 Bundle 'rhysd/vim-crystal'
 Bundle 'fatih/vim-go'
+Bundle 'dense-analysis/ale'
 
 " All of your Bundles must be added before the following line
 call vundle#end()            " required
@@ -152,7 +153,22 @@ cnoremap <expr> %%  getcmdtype() == ':' ? expand('%:h').'/' : '%%'
 " Vim conflicted airline
 set stl+=%{ConflictedVersion()}
 
-" Run NeoMake on read and write operations
-autocmd! BufReadPost,BufWritePost * Neomake
-
 let g:elm_format_autosave = 1
+
+let g:lightline = {}
+
+let g:lightline.component_expand = {
+      \  'linter_checking': 'lightline#ale#checking',
+      \  'linter_warnings': 'lightline#ale#warnings',
+      \  'linter_errors': 'lightline#ale#errors',
+      \  'linter_ok': 'lightline#ale#ok',
+      \ }
+
+let g:lightline.component_type = {
+      \     'linter_checking': 'left',
+      \     'linter_warnings': 'warning',
+      \     'linter_errors': 'error',
+      \     'linter_ok': 'left',
+      \ }
+
+let g:lightline.active = { 'right': [[ 'linter_checking', 'linter_errors', 'linter_warnings', 'linter_ok' ]] }
