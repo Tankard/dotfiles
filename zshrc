@@ -122,3 +122,5 @@ export PATH="$PATH:$HOME/.rvm/bin"
 
 export PATH="$HOME/Qt5.5.0/5.5/clang_64/bin:$PATH"
 
+
+export FZF_DEFAULT_COMMAND='ag --nocolor --ignore node_modules -g ""'

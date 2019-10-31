@@ -2,6 +2,9 @@ filetype off
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.config/nvim/bundle/Vundle.vim
+
+set rtp+=/usr/local/opt/fzf
+
 call vundle#begin("~/.config/nvim/bundle")
 
 " let Vundle manage Vundle, required
@@ -11,7 +14,7 @@ Bundle 'christoomey/vim-tmux-navigator'
 Bundle 'tpope/vim-rails'
 Bundle 'itchyny/lightline.vim'
 Bundle 'maximbaz/lightline-ale'
-Bundle 'kien/ctrlp.vim'
+Bundle 'junegunn/fzf.vim'
 Bundle 'tpope/vim-vinegar'
 Bundle 'jiangmiao/auto-pairs'
 Bundle 'tpope/vim-endwise'
@@ -89,9 +92,8 @@ let g:ag_working_path_mode="r"
 " Make it more obvious which paren I'm on
 hi MatchParen cterm=none ctermbg=black ctermfg=yellow
 
-let g:ctrlp_working_path_mode = 0
-let g:ctrlp_use_caching = 0
-let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden --ignore .git -g ""'
+" Map Ctrl + p to open fuzzy find (FZF)
+nnoremap <c-p> :Files<cr>
 
 nnoremap \ :Ag<SPACE>
 
